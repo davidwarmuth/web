@@ -16,7 +16,7 @@ const [mounted, setMounted] = useState(false)
   }, [])
 
   if (!mounted) {
-    return null
+    return <div className="size-10 bg-card rounded-md"></div>
   }
 
   return (
@@ -25,8 +25,8 @@ const [mounted, setMounted] = useState(false)
       size="icon"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      <Sun className="h-6 w-[1.3rem] dark:hidden" />
-      <Moon className="hidden size-5 dark:block" />
+      <Sun className="dark:hidden" />
+      <Moon className="hidden dark:block" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   )
