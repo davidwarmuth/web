@@ -52,7 +52,7 @@ export function ContactForm() {
   function onSubmit(values: z.infer<typeof contactFormSchema>) {
     isSending(true)
     emailjs
-      .send("service_blaceko", "template_tibbh6v", values)
+      .send("service_bfzv9rs", "template_pts7rys", values)
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text)
         isSending(false)
