@@ -11,7 +11,7 @@ const items: NavItem[] = siteConfig.lawNav
 
 export function Footer() {
   return (
-    <footer className="bg-card">
+    <footer className="bg-accent/30">
       <div className="text-muted-foreground mx-auto grid max-w-screen-2xl items-center justify-items-center gap-6 border-t px-4 py-6 text-center sm:grid-cols-[1fr,auto,1fr,auto,1fr] sm:text-left lg:flex lg:justify-around">
         <Link href="/" className="sm:col-start-2">
           <Image
@@ -24,7 +24,7 @@ export function Footer() {
           David Warmuth <br /> IT-Dienstleistungen <br /> Reinaldstr. 15 <br />{" "}
           40882 Ratingen
         </p>
-        <div className="flex flex-col gap-2 sm:col-start-4">
+        <div className="flex flex-col gap-2 sm:col-start-2">
           <a
             href="tel:+4915254237271"
             className="hover:text-foreground flex items-center gap-3"
@@ -47,7 +47,7 @@ export function Footer() {
             <span className="text-muted-foreground">Kontakt-Seite</span>
           </Link>
         </div>
-        <ul className="flex flex-col items-center gap-1 sm:col-start-2 sm:row-start-2">
+        <ul className="flex flex-col items-center gap-1 sm:col-start-4">
           {items.map((item, index) => (
             <li key={index} className="flex flex-col items-center gap-1">
               <Link
