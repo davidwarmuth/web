@@ -70,7 +70,7 @@ export function ContactForm() {
   if (error) {
     return (
       <div>
-        <Alert variant="destructive" className="bg-card dark:bg-red-200/90">
+        <Alert variant="destructive" className="bg-red-200/40 dark:bg-red-200/80">
           <AlertCircle className="size-5" />
           <AlertTitle>Nachricht konnte nicht gesendet werden!</AlertTitle>
           <AlertDescription>
@@ -83,7 +83,7 @@ export function ContactForm() {
   } else if (submitted) {
     return (
       <div>
-        <Alert className="bg-card border-green-600 text-green-600">
+        <Alert className="bg-green-100/60 dark:bg-green-950/40 border-green-600 text-green-600">
           <CheckCircle2 className="size-5 stroke-green-600" />
           <AlertTitle>Nachricht erfolgreich gesendet!</AlertTitle>
           <AlertDescription>
