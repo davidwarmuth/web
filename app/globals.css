@@ -82,15 +82,15 @@
 
 section.rechtliches {
   & h2 {
-    @apply text-4xl font-light
+    @apply text-4xl font-light mb-6
   }
   & h3 {
-    @apply text-2xl my-6
+    @apply text-2xl mb-6
   }
   & h4 {
     @apply text-xl font-bold mt-6 mb-2
   }
   & p {
-    @apply text-lg
+    @apply text-lg mb-6
   }
 } 

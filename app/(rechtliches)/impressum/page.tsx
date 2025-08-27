@@ -4,7 +4,6 @@ export default function ImpressumPage() {
       <div className="no-scrollbar bg-accent/40 max-w-screen-lg overflow-x-scroll border p-6 sm:mb-6 sm:rounded-b-md lg:mx-auto">
         <h2>Impressum</h2>
 
-        <h3>Angaben gemäß § 5 TMG:</h3>
         <p>
           David Warmuth
           <br />
@@ -175,5 +174,5 @@ export default function ImpressumPage() {
       </p>
       */}
     </section>
-  )
+  );
 }
