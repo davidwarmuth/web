@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { fontMono, fontSans } from "./fonts/fonts";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 /* const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
-}
+};
 
 export default function RootLayout({
   children,
@@ -42,18 +43,19 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
       >
-          <ThemeProvider 
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="flex min-h-screen flex-col">
-              <Header />
-              <main className="flex-1 flex flex-col">{children}</main>
-              <Footer />
-            </div>
-          </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1 flex flex-col">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
