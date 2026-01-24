@@ -41,11 +41,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    url: "/logo/DW-Logo-Name-Slogan.png",
+    url: "https://davidwarmuth.de",
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://davidwarmuth.de",
+        url: "/logo/DW-Logo-Name-Slogan.png",
         width: 1200,
         height: 630,
         alt: "David Warmuth IT-Dienstleistungen Logo",
