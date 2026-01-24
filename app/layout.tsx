@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/logos/DW-Logo-Name-Slogan.png",
+        url: "@/public/logo/DW-Logo-Name-Slogan.png",
         width: 1200,
         height: 630,
         alt: "David Warmuth IT-Dienstleistungen Logo",
