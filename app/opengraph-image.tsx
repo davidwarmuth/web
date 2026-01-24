@@ -25,7 +25,7 @@ export default async function Image() {
         padding: "16px 16px",
       }}
     >
-      <img src={logo} alt="Logo DW IT-Dienstleistungen" />
+      {/* <img src={logo} alt="Logo DW IT-Dienstleistungen" /> */}
       <div>
         <h1
           style={{
