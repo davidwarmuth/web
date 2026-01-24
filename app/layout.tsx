@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     "IT-Beratung",
     "Webdesign",
     "Webentwicklung",
-    "Softwareentwicklung",
   ],
   authors: [{ name: "David Warmuth", url: "https://davidwarmuth.de" }],
   creator: "David Warmuth",
