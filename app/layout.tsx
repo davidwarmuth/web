@@ -37,10 +37,11 @@ export const metadata: Metadata = {
   creator: "David Warmuth",
   publisher: siteConfig.name,
   // Open Graph
+  metadataBase: new URL("https://davidwarmuth.de"),
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    url: "https://davidwarmuth.de",
+    url: "/logo/DW-Logo-Name-Slogan.png",
     siteName: siteConfig.name,
     images: [
       {
